@@ -2,5 +2,6 @@
   "item.jupemod.jupe_ingot": "Jupe Ingot",
   "item.jupemod.csharp": "C#",
   "block.jupemod.jupe_ore": "Jupe Ore",
-  "itemGroup.example_tab": "BHWK Elements"
+  "itemGroup.example_tab": "BHWK Elements",
+  "block.jupemod.jupe_block": "jupe_block"
 }

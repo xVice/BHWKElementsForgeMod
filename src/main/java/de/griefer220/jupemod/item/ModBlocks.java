@@ -25,8 +25,10 @@ public class ModBlocks {
 
     public static final RegistryObject<DropExperienceBlock> jupe_ore = registerBlock("jupe_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
-                                          UniformInt.of(4,7))
-            );
+                                          UniformInt.of(4,7)));
+
+    public static final RegistryObject<Block> jupe_block = registerBlock("jupe_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
