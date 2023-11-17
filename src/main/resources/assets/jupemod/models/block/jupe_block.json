@@ -2,6 +2,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "jupemod:block/jupe_bock"
+    "all": "jupemod:block/jupe_block"
   }
 }

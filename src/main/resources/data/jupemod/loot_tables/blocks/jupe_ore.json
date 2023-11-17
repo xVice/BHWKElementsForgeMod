@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "jupemod:jupe_ore"
+              "name": "jupemod:raw_jupe"
             }
           ]
         }
