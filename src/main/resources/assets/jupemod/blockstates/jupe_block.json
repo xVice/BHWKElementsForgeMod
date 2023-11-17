@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jupemod:block/jupe_block"
+    }
+  }
+}

@@ -28,10 +28,14 @@ public class ModIteminit {
                     .rarity(Rarity.create("C#", ChatFormatting.LIGHT_PURPLE)))));
 
 
+
     public static final RegistryObject<BlockItem> jupe_ore = addToTab(Items.register("jupe_ore",
             () -> new BlockItem(ModBlocks.jupe_ore.get(),
                   new Item.Properties())));
 
+    public static final RegistryObject<BlockItem> jupe_block = addToTab(Items.register("jupe_block",
+            () -> new BlockItem(ModBlocks.jupe_block.get(),
+                    new Item.Properties())));
 
 
 
