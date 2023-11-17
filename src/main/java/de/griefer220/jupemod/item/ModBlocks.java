@@ -28,7 +28,7 @@ public class ModBlocks {
                                           UniformInt.of(4,7)));
 
     public static final RegistryObject<Block> JUPE_BLOCK = registerBlock("jupe_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
 
 
