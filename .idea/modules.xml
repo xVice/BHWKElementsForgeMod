@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0-SNAPSHOT.jupemod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0-SNAPSHOT.jupemod.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0-SNAPSHOT.jupemod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0-SNAPSHOT.jupemod.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod-main.jupemod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod-main.jupemod.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod-main.jupemod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod-main.jupemod.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod.jupemod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod.jupemod.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod.jupemod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BHWKElementsForgeMod.jupemod.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jupemod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jupemod.main.iml" />

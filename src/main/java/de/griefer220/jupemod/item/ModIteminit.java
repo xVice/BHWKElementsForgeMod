@@ -2,10 +2,10 @@ package de.griefer220.jupemod.item;
 
 import de.griefer220.jupemod.Main;
 import net.minecraft.ChatFormatting;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.client.renderer.EffectInstance;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -57,7 +57,29 @@ public class ModIteminit {
     public static final RegistryObject<Item> bool_ingot = addToTab(Items.register("bool_ingot",
             () -> new Item( new Item.Properties()
                     .stacksTo(64)
-                    .rarity(Rarity.create("bool.ingot", ChatFormatting.GREEN)))));
+                    .rarity(Rarity.create("bool.ingot", ChatFormatting.BLACK)))));
+
+    //Jubers sachen
+    public static final RegistryObject<Item> juber_ingot = addToTab(Items.register("juber_ingot",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+
+    public static final RegistryObject<SwordItem> juber_sword = addToTab(Items.register("juber_sword",
+            () -> new SwordItem(Tiers.NETHERITE, // Replace YOUR_TIER with the appropriate item tier
+                    20, 100, // Replace these values with the appropriate attack damage and attack speed
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .food(new FoodProperties.Builder()
+                                    .nutrition(10) // Amount of hunger restored
+                                    .saturationMod(5f) // Saturation value
+                                    .alwaysEat() // Item can be eaten even if the player isn't hungry
+                                    .build())
+                            .durability(69420)
+                            .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+//jubers sachen end
+
+
 
 
 
