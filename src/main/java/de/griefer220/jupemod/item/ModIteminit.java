@@ -42,6 +42,11 @@ public class ModIteminit {
                     .stacksTo(64)
                     .rarity(Rarity.create("C#", ChatFormatting.DARK_GREEN)))));
 
+    public static final RegistryObject<Item> oarschi_platte = addToTab(Items.register("oarschi_platte",
+            () -> new Item( new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.create("oarschi_platte", ChatFormatting.DARK_RED)))));
+
 
 
     public static void register(IEventBus eventBus){
