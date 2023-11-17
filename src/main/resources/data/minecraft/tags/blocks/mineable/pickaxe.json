@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "jupemod:jupe_ore"
+    "jupemod:jupe_ore",
+    "jupemod:jupe_block"
   ]
 }
