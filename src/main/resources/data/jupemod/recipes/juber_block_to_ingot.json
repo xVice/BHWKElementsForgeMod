@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " i ",
+    "   "
+  ],
+  "key": {
+    "i": {
+      "item": "jupemod:juber_block"
+    }
+  },
+  "result": {
+    "item": "jupemod:juber_ingot",
+    "count": 9
+  }
+}

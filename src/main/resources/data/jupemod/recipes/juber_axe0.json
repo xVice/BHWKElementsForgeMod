@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ii",
+    " si",
+    " s "
+  ],
+  "key": {
+    "i": {
+      "item": "jupemod:juber_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "jupemod:juber_axe",
+    "count": 1
+  }
+}

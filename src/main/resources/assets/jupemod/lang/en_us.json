@@ -8,6 +8,14 @@
   "item.jupemod.oarschi_platte": "oarschi platte",
   "item.jupemod.gelencser_ingot": "gelencser ingot",
   "item.jupemod.juber_ingot": "Juber Ingot",
-  "item.jupemod.juber_sword": "Jubers Lanze"
+  "item.jupemod.juber_sword": "Jubers Lanze",
+  "block.jupemod.juber_block": "Juber Block",
+  "block.jupemod.juber_ore": "La Fuss Ore",
+  "item.jupemod.juber_pickaxe": "Jubers Picke",
+  "item.jupemod.juber_shovel": "Jubers Spaten",
+  "item.jupemod.juber_axe": "Jubers Hackebeil",
+  "item.jupemod.juber_raw": "Roher juber",
+  "item.jupemod.juber_hoe": "Jubers Hure",
+  "item.jupemod.juber_nugget": "Jubers Ei"
 
 }

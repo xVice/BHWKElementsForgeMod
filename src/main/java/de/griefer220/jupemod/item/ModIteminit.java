@@ -65,6 +65,71 @@ public class ModIteminit {
                     .stacksTo(64)
                     .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
 
+    public static final RegistryObject<Item> juber_raw = addToTab(Items.register("juber_raw",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+    public static final RegistryObject<Item> juber_nugget = addToTab(Items.register("juber_nugget",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+
+
+
+    public static final RegistryObject<BlockItem> juber_ore = addToTab(Items.register("juber_ore",
+            () -> new BlockItem(ModBlocks.juber_ore.get(),
+                    new Item.Properties())));
+
+    public static final RegistryObject<BlockItem> juber_block = addToTab(Items.register("juber_block",
+            () -> new BlockItem(ModBlocks.juber_block.get(),
+                    new Item.Properties())));
+
+
+
+    public static final RegistryObject<Item> juber_pickaxe = addToTab(Items.register("juber_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE, 1, 1,new Item.Properties()
+                    .stacksTo(1)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10) // Amount of hunger restored
+                            .saturationMod(5f) // Saturation value
+                            .alwaysEat() // Item can be eaten even if the player isn't hungry
+                            .build())
+                    .durability(69420)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+
+    public static final RegistryObject<Item> juber_shovel = addToTab(Items.register("juber_shovel",
+            () -> new ShovelItem(Tiers.NETHERITE, 1, 1,new Item.Properties()
+                    .stacksTo(1)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10) // Amount of hunger restored
+                            .saturationMod(5f) // Saturation value
+                            .alwaysEat() // Item can be eaten even if the player isn't hungry
+                            .build())
+                    .durability(69420)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+
+    public static final RegistryObject<Item> juber_axe = addToTab(Items.register("juber_axe",
+            () -> new AxeItem(Tiers.NETHERITE, 1, 1,new Item.Properties()
+                    .stacksTo(1)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10) // Amount of hunger restored
+                            .saturationMod(5f) // Saturation value
+                            .alwaysEat() // Item can be eaten even if the player isn't hungry
+                            .build())
+                    .durability(69420)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
+
+    public static final RegistryObject<Item> juber_hoe = Items.register("juber_hoe",
+            () -> new HoeItem(Tiers.NETHERITE, 1 , 1f,new Item.Properties()
+                    .stacksTo(1)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10) // Amount of hunger restored
+                            .saturationMod(5f) // Saturation value
+                            .alwaysEat() // Item can be eaten even if the player isn't hungry
+                            .build())
+                    .durability(69420)
+                    .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN))));
+
     public static final RegistryObject<SwordItem> juber_sword = addToTab(Items.register("juber_sword",
             () -> new SwordItem(Tiers.NETHERITE, // Replace YOUR_TIER with the appropriate item tier
                     20, 100, // Replace these values with the appropriate attack damage and attack speed
