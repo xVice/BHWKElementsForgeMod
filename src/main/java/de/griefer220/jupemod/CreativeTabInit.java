@@ -28,7 +28,7 @@ public class CreativeTabInit {
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = TABS.register("example_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.example_tab"))
-                    .icon(ModIteminit.jupe_ingot.get()::getDefaultInstance)
+                    .icon(ModIteminit.juber_ingot.get()::getDefaultInstance)
                     .displayItems((displayParams, output) ->
                             EXAMPLE_TAB_ITEMS.forEach(itemLike -> output.accept(itemLike.get())))
                     .withSearchBar()

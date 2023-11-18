@@ -30,6 +30,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUPE_BLOCK = registerBlock("jupe_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
+    public static final RegistryObject<Block> juber_block = registerBlock("juber_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+
+    public static final RegistryObject<DropExperienceBlock> juber_ore = registerBlock("juber_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+                    UniformInt.of(4,7)));
+
 
 
 
