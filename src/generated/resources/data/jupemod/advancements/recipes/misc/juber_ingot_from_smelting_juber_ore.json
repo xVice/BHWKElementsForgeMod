@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_juber_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jupemod:juber_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jupemod:juber_ingot_from_smelting_juber_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_juber_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jupemod:juber_ingot_from_smelting_juber_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

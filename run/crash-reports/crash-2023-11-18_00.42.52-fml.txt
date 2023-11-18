@@ -44,7 +44,7 @@ Stacktrace:
 -- MOD jupemod --
 Details:
 	Caused by 0: java.lang.ExceptionInInitializerError
-		at de.griefer220.jupemod.Main.<init>(Main.java:45) ~[%23196!/:?] {re:classloading}
+		at de.griefer220.jupemod.BHWK.<init>(Main.java:45) ~[%23196!/:?] {re:classloading}
 		at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
 		at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
 		at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
@@ -68,8 +68,8 @@ Details:
 	Exception message: java.lang.IllegalArgumentException: Duplicate registration juber_ingot
 Stacktrace:
 	at net.minecraftforge.registries.DeferredRegister.register(DeferredRegister.java:192) ~[forge-1.20.1-47.2.6_mapped_official_1.20.1-recomp.jar%23190%23197!/:?] {re:classloading}
-	at de.griefer220.jupemod.item.ModIteminit.<clinit>(ModIteminit.java:77) ~[%23196!/:?] {re:classloading}
-	at de.griefer220.jupemod.Main.<init>(Main.java:45) ~[%23196!/:?] {re:classloading}
+	at de.griefer220.jupemod.item.ModItems.<clinit>(ModIteminit.java:77) ~[%23196!/:?] {re:classloading}
+	at de.griefer220.jupemod.BHWK.<init>(Main.java:45) ~[%23196!/:?] {re:classloading}
 	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
 	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
 	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "jupe",
+  "ingredient": {
+    "item": "jupemod:jupe_ore"
+  },
+  "result": "jupemod:jupe_ingot"
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bool_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jupemod:bool_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jupemod:csharp_from_blasting_bool_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bool_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jupemod:csharp_from_blasting_bool_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

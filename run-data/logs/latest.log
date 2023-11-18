@@ -1,0 +1,29 @@
+[18Nov.2023 21:43:46.448] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Justus\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, jupemod, --all, --output, D:\jupemod\src\generated\resources, --existing, D:\jupemod\src\main\resources]
+[18Nov.2023 21:43:46.457] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by JetBrains s.r.o.; OS Windows 10 arch amd64 version 10.0
+[18Nov.2023 21:43:46.683] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[18Nov.2023 21:43:46.789] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Justus/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[18Nov.2023 21:43:47.449] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Justus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.6\56551ed4a181a00930b0365996e1d9f3ca851459\javafmllanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[18Nov.2023 21:43:47.457] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Justus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.6\f27bd133cd78227e8d6def633b83c881a30cc243\lowcodelanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[18Nov.2023 21:43:47.464] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Justus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.6\6e1641ac5a046737d7c3209901ca0a829d636873\mclanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[18Nov.2023 21:43:47.471] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Justus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.6\2d5f5aff839b7d2825c6968049399633d1c4d0b8\fmlcore-1.20.1-47.2.6.jar is missing mods.toml file
+[18Nov.2023 21:43:47.621] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[18Nov.2023 21:43:49.923] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Justus\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, jupemod, --all, --output, D:\jupemod\src\generated\resources, --existing, D:\jupemod\src\main\resources]
+[18Nov.2023 21:43:50.568] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [jupemod]
+[18Nov.2023 21:43:58.684] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.6, for MC 1.20.1 with MCP 20230612.114412
+[18Nov.2023 21:43:58.689] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.6 Initialized
+[18Nov.2023 21:43:59.405] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Justus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_official_1.20.1/forge-1.20.1-47.2.6_mapped_official_1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[18Nov.2023 21:43:59.405] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Justus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_official_1.20.1/forge-1.20.1-47.2.6_mapped_official_1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[18Nov.2023 21:43:59.610] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[18Nov.2023 21:43:59.678] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 67 ms
+[18Nov.2023 21:43:59.678] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[18Nov.2023 21:43:59.735] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 56 ms
+[18Nov.2023 21:43:59.735] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: jupemod
+[18Nov.2023 21:43:59.910] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: jupemod finished after 174 ms
+[18Nov.2023 21:43:59.910] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: jupemod
+[18Nov.2023 21:43:59.927] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: jupemod finished after 16 ms
+[18Nov.2023 21:43:59.927] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id jupemod
+[18Nov.2023 21:43:59.955] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id jupemod finished after 27 ms
+[18Nov.2023 21:43:59.955] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id jupemod
+[18Nov.2023 21:43:59.957] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id jupemod finished after 1 ms
+[18Nov.2023 21:43:59.957] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 347 ms
+[18Nov.2023 21:43:59.981] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 69, old count: 0, new count: 66, removed stale: 4, written: 65

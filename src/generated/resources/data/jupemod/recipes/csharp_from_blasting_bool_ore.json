@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.25,
+  "group": "bool",
+  "ingredient": {
+    "item": "jupemod:bool_ore"
+  },
+  "result": "jupemod:csharp"
+}

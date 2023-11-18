@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.25,
+  "group": "jupe",
+  "ingredient": {
+    "item": "jupemod:raw_jupe"
+  },
+  "result": "jupemod:jupe_ingot"
+}

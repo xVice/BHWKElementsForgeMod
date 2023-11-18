@@ -1,0 +1,5 @@
+// 1.20.1	2023-11-18T21:43:59.9664662	Tags for minecraft:block mod id jupemod
+e932715a3f7883e30a94390c80e3e25bbde7d83c data/jupemod/tags/blocks/metal_detector_valuables.json
+241205aa136a12d6bbe25d8d2d2a7bc63a171b31 data/minecraft/tags/blocks/mineable/pickaxe.json
+5f2ad8a7952262a6f2f97c14849414dfec73a185 data/minecraft/tags/blocks/needs_diamond_tool.json
+5a4e7a11ff42a642f26a8c7da855d39c7d8c88e0 data/minecraft/tags/blocks/needs_iron_tool.json

@@ -5,8 +5,8 @@
   "itemGroup.example_tab": "BHWK Elements",
   "block.jupemod.jupe_block": "Block of Jupe",
   "item.jupemod.raw_jupe": "Raw Jupe",
-  "item.jupemod.oarschi_platte": "oarschi platte",
-  "item.jupemod.gelencser_ingot": "gelencser ingot",
+  "item.jupemod.oarschi_platte": "Top Top La Gruß",
+  "item.jupemod.gelencser_ingot": "Gelencser Ingot",
   "item.jupemod.juber_ingot": "Juber Ingot",
   "item.jupemod.juber_sword": "Jubers Lanze",
   "block.jupemod.juber_block": "Juber Block",
@@ -17,6 +17,7 @@
   "item.jupemod.juber_raw": "Roher juber",
   "item.jupemod.juber_hoe": "Jubers Hure",
   "item.jupemod.juber_nugget": "Jubers Ei",
-  "item.jupemod.bool_block": "block of bool"
+  "block.jupemod.bool_block": "Block of Bool",
+  "block.jupemod.bool_ore": "Boo(lean) Ore"
 
 }

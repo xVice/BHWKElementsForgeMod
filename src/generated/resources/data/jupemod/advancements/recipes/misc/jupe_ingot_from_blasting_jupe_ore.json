@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jupe_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jupemod:jupe_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jupemod:jupe_ingot_from_blasting_jupe_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_jupe_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jupemod:jupe_ingot_from_blasting_jupe_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

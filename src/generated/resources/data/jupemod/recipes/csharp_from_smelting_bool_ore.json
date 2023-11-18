@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.25,
+  "group": "bool",
+  "ingredient": {
+    "item": "jupemod:bool_ore"
+  },
+  "result": "jupemod:csharp"
+}
