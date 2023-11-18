@@ -37,6 +37,13 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
                     UniformInt.of(4,7)));
 
+    public static final RegistryObject<Block> bool_block = registerBlock("bool_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+
+    public static final RegistryObject<DropExperienceBlock> bool_ore = registerBlock("bool_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+                    UniformInt.of(4,7)));
+
 
 
 
