@@ -144,6 +144,15 @@ public class ModIteminit {
                             .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
 //jubers sachen end
 
+    //bool items
+    public static final RegistryObject<BlockItem> bool_block = addToTab(Items.register("bool_block",
+            () -> new BlockItem(ModBlocks.bool_block.get(),
+                    new Item.Properties())));
+
+    public static final RegistryObject<BlockItem> bool_ore = addToTab(Items.register("bool_ore",
+            () -> new BlockItem(ModBlocks.bool_ore.get(),
+                    new Item.Properties())));
+
 
 
 
