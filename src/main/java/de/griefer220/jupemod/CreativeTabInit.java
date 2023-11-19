@@ -1,6 +1,6 @@
 package de.griefer220.jupemod;
 
-import de.griefer220.jupemod.item.ModItems;
+import de.griefer220.jupemod.init.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

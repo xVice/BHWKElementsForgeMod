@@ -99,5 +99,11 @@
     },
     "done": true
   },
+  "jupemod:recipes/misc/juber_block": {
+    "criteria": {
+      "has_juber_ingot": "2023-11-19 02:58:06 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

@@ -1,7 +1,7 @@
 package de.griefer220.jupemod.datagen;
 
 import de.griefer220.jupemod.BHWK;
-import de.griefer220.jupemod.item.ModBlocks;
+import de.griefer220.jupemod.init.ModBlocks;
 import de.griefer220.jupemod.utils.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

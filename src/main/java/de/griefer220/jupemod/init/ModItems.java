@@ -1,9 +1,11 @@
-package de.griefer220.jupemod.item;
+package de.griefer220.jupemod.init;
 
 import de.griefer220.jupemod.BHWK;
+import de.griefer220.jupemod.custom.jupeblocks.grinderblock.CustomGrinderBaseBlock;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,6 +23,7 @@ public class ModItems {
                     .stacksTo(69)
                     .rarity(Rarity.create("weed", ChatFormatting.DARK_GREEN)))));
 
+
     public static final RegistryObject<Item> csharp = addToTab(Items.register("csharp",
             () -> new Item( new Item.Properties()
                     .stacksTo(64)
@@ -28,13 +31,8 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<BlockItem> jupe_ore = addToTab(Items.register("jupe_ore",
-            () -> new BlockItem(ModBlocks.jupe_ore.get(),
-                  new Item.Properties())));
 
-    public static final RegistryObject<BlockItem> jupe_block = addToTab(Items.register("jupe_block",
-            () -> new BlockItem(ModBlocks.JUPE_BLOCK.get(),
-                    new Item.Properties())));
+
 
     public static final RegistryObject<Item> raw_jupe = addToTab(Items.register("raw_jupe",
             () -> new Item( new Item.Properties()
@@ -74,13 +72,7 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<BlockItem> juber_ore = addToTab(Items.register("juber_ore",
-            () -> new BlockItem(ModBlocks.juber_ore.get(),
-                    new Item.Properties())));
 
-    public static final RegistryObject<BlockItem> juber_block = addToTab(Items.register("juber_block",
-            () -> new BlockItem(ModBlocks.juber_block.get(),
-                    new Item.Properties())));
 
 
 
@@ -141,16 +133,6 @@ public class ModItems {
                             .durability(69420)
                             .rarity(Rarity.create("Weed energy", ChatFormatting.GREEN)))));
 //jubers sachen end
-
-    //bool items
-    public static final RegistryObject<BlockItem> bool_block = addToTab(Items.register("bool_block",
-            () -> new BlockItem(ModBlocks.bool_block.get(),
-                    new Item.Properties())));
-
-    public static final RegistryObject<BlockItem> bool_ore = addToTab(Items.register("bool_ore",
-            () -> new BlockItem(ModBlocks.bool_ore.get(),
-                    new Item.Properties())));
-
 
 
 

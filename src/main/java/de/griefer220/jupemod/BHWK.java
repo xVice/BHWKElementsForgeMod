@@ -1,8 +1,10 @@
 package de.griefer220.jupemod;
 
 import com.mojang.logging.LogUtils;
-import de.griefer220.jupemod.item.ModItems;
-import de.griefer220.jupemod.item.ModBlocks;
+import de.griefer220.jupemod.init.ModBlockEntitys;
+import de.griefer220.jupemod.init.ModItems;
+import de.griefer220.jupemod.init.ModBlocks;
+import de.griefer220.jupemod.init.ModMenuTypes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,6 +30,9 @@ public class BHWK {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntitys.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
         CreativeTabInit.TABS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

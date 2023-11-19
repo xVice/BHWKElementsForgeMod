@@ -1,30 +1,26 @@
 package de.griefer220.jupemod.datagen;
 
 import de.griefer220.jupemod.BHWK;
-import de.griefer220.jupemod.item.ModBlocks;
-import de.griefer220.jupemod.item.ModItems;
-import net.minecraft.data.Main;
+import de.griefer220.jupemod.init.ModBlocks;
+import de.griefer220.jupemod.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+
 import java.util.function.Consumer;
 
 import java.util.List;
-import java.util.function.Consumer;
+
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    public static final List<ItemLike> JUBER_SMELTABLES = List.of(ModItems.juber_raw.get(), ModItems.juber_ore.get());
-    public static final List<ItemLike> JUPE_SMELTABLES = List.of(ModItems.jupe_ore.get(), ModItems.raw_jupe.get());
-    public static final List<ItemLike> BOOL_SMELTABLES = List.of(ModItems.bool_ore.get());
+    public static final List<ItemLike> JUBER_SMELTABLES = List.of(ModItems.juber_raw.get(), ModBlocks.juber_ore.get());
+    public static final List<ItemLike> JUPE_SMELTABLES = List.of(ModBlocks.jupe_ore.get(), ModItems.raw_jupe.get());
+    public static final List<ItemLike> BOOL_SMELTABLES = List.of(ModBlocks.bool_ore.get());
 
     public ModRecipeProvider(PackOutput p_248933_) {
         super(p_248933_);

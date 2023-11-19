@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "jupemod:bool_ore"
+              "name": "jupemod:bool_ingot"
             }
           ]
         }

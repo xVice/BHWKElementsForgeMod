@@ -1,10 +1,11 @@
 package de.griefer220.jupemod.datagen;
 
 import de.griefer220.jupemod.BHWK;
-import de.griefer220.jupemod.item.ModBlocks;
+import de.griefer220.jupemod.init.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.level.block.Block;
@@ -25,7 +26,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.juber_block);
         xpBlockWithItem(ModBlocks.juber_ore);
 
-
+        simpleBlock(ModBlocks.JUPE_GRINDER.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/jupe_grinder"))
+        );
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

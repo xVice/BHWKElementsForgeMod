@@ -1,9 +1,10 @@
-// 1.20.1	2023-11-18T21:43:59.958968	Block States: jupemod
+// 1.20.1	2023-11-19T02:08:49.9982374	Block States: jupemod
 370ded031348a48ff1e6c02dbb2da3d2b47585f0 assets/jupemod/blockstates/bool_block.json
 8216a85178fcb1bfd40d25d07c2d54c5393fd095 assets/jupemod/blockstates/bool_ore.json
 411562a6c44fb9bf0ddebe973741bb9c28ccf82c assets/jupemod/blockstates/juber_block.json
 edee13d1292a0fff78c38e7c5debb3c3ba30e274 assets/jupemod/blockstates/juber_ore.json
 31e15174c78ad008e64b24a811569859a824b6be assets/jupemod/blockstates/jupe_block.json
+6c41ff416b9d1922c07c771f537874804fb57213 assets/jupemod/blockstates/jupe_grinder.json
 725a189291fa2d3996b105ece726ae584db09394 assets/jupemod/blockstates/jupe_ore.json
 a7b9a189d44575ba3b9f55e643d4a696f06990f7 assets/jupemod/models/block/bool_block.json
 38623e0159863716b20063a37974d605b8d6dfea assets/jupemod/models/block/bool_ore.json

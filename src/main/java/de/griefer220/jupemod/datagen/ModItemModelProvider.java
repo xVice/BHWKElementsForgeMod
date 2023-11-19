@@ -1,7 +1,7 @@
 package de.griefer220.jupemod.datagen;
 
 import de.griefer220.jupemod.BHWK;
-import de.griefer220.jupemod.item.ModItems;
+import de.griefer220.jupemod.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
