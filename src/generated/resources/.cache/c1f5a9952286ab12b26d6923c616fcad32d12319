@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-19T02:08:49.9982374	Block States: jupemod
+// 1.20.1	2023-11-21T01:28:38.9156366	Block States: jupemod
 370ded031348a48ff1e6c02dbb2da3d2b47585f0 assets/jupemod/blockstates/bool_block.json
 8216a85178fcb1bfd40d25d07c2d54c5393fd095 assets/jupemod/blockstates/bool_ore.json
 411562a6c44fb9bf0ddebe973741bb9c28ccf82c assets/jupemod/blockstates/juber_block.json
@@ -6,6 +6,7 @@ edee13d1292a0fff78c38e7c5debb3c3ba30e274 assets/jupemod/blockstates/juber_ore.js
 31e15174c78ad008e64b24a811569859a824b6be assets/jupemod/blockstates/jupe_block.json
 6c41ff416b9d1922c07c771f537874804fb57213 assets/jupemod/blockstates/jupe_grinder.json
 725a189291fa2d3996b105ece726ae584db09394 assets/jupemod/blockstates/jupe_ore.json
+470da5a46256ca84167e646ae224d6caa3aab20a assets/jupemod/blockstates/leon_generator.json
 a7b9a189d44575ba3b9f55e643d4a696f06990f7 assets/jupemod/models/block/bool_block.json
 38623e0159863716b20063a37974d605b8d6dfea assets/jupemod/models/block/bool_ore.json
 188dbc67c0ae833ed8ae611728c290c0f5b96482 assets/jupemod/models/block/juber_block.json
@@ -17,4 +18,6 @@ f1ff621f91397f35ff6cd851b442950b47e6bc61 assets/jupemod/models/item/bool_ore.jso
 7d30d56dc2a36409efa7b506aa12dbf2d3aacc9d assets/jupemod/models/item/juber_block.json
 0dc6b7a36f35d66e0e9b9411c3f813a328b98406 assets/jupemod/models/item/juber_ore.json
 47702a9b791c3b1708a3b092cd795a295a35cd98 assets/jupemod/models/item/jupe_block.json
+966bafe3c59ed947adcf946a5d5285f50be1f5c1 assets/jupemod/models/item/jupe_grinder.json
 dc3784d8632c3167bd341ff70dfe1007ad74e5ca assets/jupemod/models/item/jupe_ore.json
+75415fd319979f43eb206b66bceaba3a4736f516 assets/jupemod/models/item/leon_generator.json

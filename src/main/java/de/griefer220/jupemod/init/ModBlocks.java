@@ -2,6 +2,7 @@ package de.griefer220.jupemod.init;
 
 import de.griefer220.jupemod.BHWK;
 import de.griefer220.jupemod.custom.jupeblocks.grinderblock.CustomGrinderBaseBlock;
+import de.griefer220.jupemod.custom.jupeblocks.leongenerator.LeonGeneratorBaseBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,8 +17,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
-
-import static de.griefer220.jupemod.CreativeTabInit.addToTab;
 
 
 public class ModBlocks {
@@ -46,8 +45,13 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
                     UniformInt.of(4,7)));
 
-    public static final RegistryObject<Block> JUPE_GRINDER = registerBlock("jupe_grinder",
-            () -> new CustomGrinderBaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANVIL).noCollission()));
+    public static final RegistryObject<Block> jupe_grinder = registerBlock("jupe_grinder",
+            () -> new CustomGrinderBaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+
+    //leon
+    public static final RegistryObject<Block> leon_generator = registerBlock("leon_generator",
+            () -> new LeonGeneratorBaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
 
     //bool
@@ -59,6 +63,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
 
 
+
+
     //keiner weiß
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -67,7 +73,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return addToTab(ModItems.Items.register(name, () -> new BlockItem(block.get(), new Item.Properties())));
+        return ModItems.Items.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     //eventbus diggi

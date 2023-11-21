@@ -2,6 +2,7 @@ package de.griefer220.jupemod.custom.jupeblocks.grinderblock;
 
 import de.griefer220.jupemod.init.ModBlockEntitys;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.client.event.CustomizeGuiOverlayEvent;
 import org.jetbrains.annotations.Nullable;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkHooks;
@@ -49,20 +51,40 @@ public class CustomGrinderBaseBlock extends BaseEntityBlock {
 
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
     }
+
+
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (!pLevel.isClientSide()) {
-            BlockEntity entity = pLevel.getBlockEntity(pPos);
+    public InteractionResult use(BlockState p_60503_, Level p_60504_, BlockPos p_60505_, Player p_60506_, InteractionHand p_60507_, BlockHitResult p_60508_) {
+
+        if (!p_60504_.isClientSide()) {
+            BlockEntity entity = p_60504_.getBlockEntity(p_60505_);
             if(entity instanceof CustomGrinderBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CustomGrinderBlockEntity)entity, pPos);
+                NetworkHooks.openScreen(((ServerPlayer)p_60506_), (CustomGrinderBlockEntity)entity, p_60505_);
             } else {
+
                 throw new IllegalStateException("Our Container provider is missing!");
             }
         }
 
-        return InteractionResult.sidedSuccess(pLevel.isClientSide());
+        return InteractionResult.sidedSuccess(p_60504_.isClientSide());
+
     }
 
+    /*
+        @Override
+        public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+            if (!pLevel.isClientSide()) {
+                BlockEntity entity = pLevel.getBlockEntity(pPos);
+                if(entity instanceof CustomGrinderBlockEntity) {
+                    NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CustomGrinderBlockEntity)entity, pPos);
+                } else {
+                    throw new IllegalStateException("Our Container provider is missing!");
+                }
+            }
+
+            return InteractionResult.sidedSuccess(pLevel.isClientSide());
+        }
+    */
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {

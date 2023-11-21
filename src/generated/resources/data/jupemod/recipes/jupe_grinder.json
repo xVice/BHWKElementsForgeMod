@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "J": {
+      "item": "jupemod:jupe_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "IJI",
+    "B B"
+  ],
+  "result": {
+    "item": "jupemod:jupe_grinder"
+  },
+  "show_notification": true
+}

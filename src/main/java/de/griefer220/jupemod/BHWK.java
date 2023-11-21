@@ -1,10 +1,13 @@
 package de.griefer220.jupemod;
 
 import com.mojang.logging.LogUtils;
+import de.griefer220.jupemod.custom.jupeblocks.grinderblock.screen.CustomGrinderScreen;
+import de.griefer220.jupemod.custom.jupeblocks.leongenerator.screen.LeonGeneratorScreen;
 import de.griefer220.jupemod.init.ModBlockEntitys;
 import de.griefer220.jupemod.init.ModItems;
 import de.griefer220.jupemod.init.ModBlocks;
 import de.griefer220.jupemod.init.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,7 +36,7 @@ public class BHWK {
         ModBlockEntitys.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
-        CreativeTabInit.TABS.register(modEventBus);
+        CreativeTabInit.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -53,8 +56,9 @@ public class BHWK {
     public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(ModMenuTypes.JUPE_GRINDER_MENU.get(), CustomGrinderScreen::new);
+            MenuScreens.register(ModMenuTypes.LEON_GENERATOR_MENU.get(), LeonGeneratorScreen::new);
         }
     }
 }

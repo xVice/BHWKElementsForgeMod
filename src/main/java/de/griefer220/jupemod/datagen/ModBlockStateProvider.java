@@ -26,8 +26,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.juber_block);
         xpBlockWithItem(ModBlocks.juber_ore);
 
-        simpleBlock(ModBlocks.JUPE_GRINDER.get(),
+        simpleBlockWithItem(ModBlocks.jupe_grinder.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/jupe_grinder"))
+        );
+
+        simpleBlockWithItem(ModBlocks.leon_generator.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/leon_generator"))
         );
     }
 

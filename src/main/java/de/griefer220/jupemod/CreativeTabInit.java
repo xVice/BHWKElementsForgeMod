@@ -1,15 +1,14 @@
 package de.griefer220.jupemod;
 
+import de.griefer220.jupemod.init.ModBlocks;
 import de.griefer220.jupemod.init.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,31 +18,40 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
-@Mod.EventBusSubscriber(modid = BHWK.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CreativeTabInit {
-    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BHWK.MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BHWK.MODID);
 
-    public static final List<Supplier<? extends ItemLike>> EXAMPLE_TAB_ITEMS = new ArrayList<>();
-
-    public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = TABS.register("example_tab",
-            () -> CreativeModeTab.builder()
+    public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("example_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.oarschi_platte.get()))
                     .title(Component.translatable("itemGroup.example_tab"))
-                    .icon(ModItems.juber_ingot.get()::getDefaultInstance)
-                    .displayItems((displayParams, output) ->
-                            EXAMPLE_TAB_ITEMS.forEach(itemLike -> output.accept(itemLike.get())))
-                    .withSearchBar()
-                    .build()
-    );
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.jupe_grinder.get());
+                        pOutput.accept(ModBlocks.JUPE_BLOCK.get());
+                        pOutput.accept(ModBlocks.bool_block.get());
+                        pOutput.accept(ModBlocks.juber_block.get());
+                        pOutput.accept(ModBlocks.bool_ore.get());
+                        pOutput.accept(ModBlocks.jupe_ore.get());
+                        pOutput.accept(ModItems.bool_ingot.get());
+                        pOutput.accept(ModItems.oarschi_platte.get());
+                        pOutput.accept(ModItems.juber_ingot.get());
+                        pOutput.accept(ModItems.juber_axe.get());
+                        pOutput.accept(ModItems.juber_raw.get());
+                        pOutput.accept(ModItems.juber_axe.get());
+                        pOutput.accept(ModItems.juber_pickaxe.get());
+                        pOutput.accept(ModItems.juber_nugget.get());
+                        pOutput.accept(ModItems.juber_shovel.get());
+                        pOutput.accept(ModItems.juber_sword.get());
+                        pOutput.accept(ModItems.juber_hoe.get());
+                        pOutput.accept(ModItems.jupe_ingot.get());
+                        pOutput.accept(ModBlocks.leon_generator.get());
+                        pOutput.accept(ModItems.gelencser_ingot.get());
 
-    public static <T extends Item> RegistryObject<T> addToTab(RegistryObject<T> itemLike) {
-        EXAMPLE_TAB_ITEMS.add(itemLike);
-        return itemLike;
-    }
+                    })
+                    .build());
 
-    @SubscribeEvent
-    public static void buildContents(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.getEntries().putAfter(Items.ACACIA_LOG.getDefaultInstance(), ModItems.jupe_ingot.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-        }
+
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
     }
 }

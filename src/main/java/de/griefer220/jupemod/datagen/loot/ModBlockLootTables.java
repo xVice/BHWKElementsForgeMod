@@ -27,7 +27,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.JUPE_BLOCK.get());
         this.dropSelf(ModBlocks.juber_block.get());
         this.dropSelf(ModBlocks.bool_block.get());
-        this.dropSelf(ModBlocks.JUPE_GRINDER.get());
+        this.dropSelf(ModBlocks.jupe_grinder.get());
+        this.dropSelf(ModBlocks.leon_generator.get());
 
 
         this.add(ModBlocks.juber_ore.get(),

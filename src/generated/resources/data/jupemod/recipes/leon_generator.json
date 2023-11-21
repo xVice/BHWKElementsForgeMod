@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "L": {
+      "item": "jupemod:gelencser_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BLB",
+    "BBB"
+  ],
+  "result": {
+    "item": "jupemod:leon_generator"
+  },
+  "show_notification": true
+}

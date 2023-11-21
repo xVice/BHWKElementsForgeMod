@@ -105,7 +105,7 @@ public class CustomGrinderMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.JUPE_GRINDER.get());
+                pPlayer, ModBlocks.jupe_grinder.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

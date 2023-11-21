@@ -6,6 +6,8 @@ import de.griefer220.jupemod.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -42,6 +44,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("JJJ")
                 .pattern("JJJ")
                 .define('J', ModItems.juber_ingot.get())
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.jupe_grinder.get())
+                .pattern("III")
+                .pattern("IJI")
+                .pattern("B B")
+                .define('I', Items.IRON_INGOT).define('J', ModItems.jupe_ingot.get()).define('B', Blocks.IRON_BLOCK)
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.leon_generator.get())
+                .pattern("BBB")
+                .pattern("BLB")
+                .pattern("BBB")
+                .define('L', ModItems.gelencser_ingot.get()).define('B', Blocks.IRON_BLOCK)
                 .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
                 .save(pWriter);
 
