@@ -32,7 +32,7 @@ import org.jetbrains.annotations.Nullable;
 public class LeonGeneratorBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(2);
 
-    public float energy = 0.0f;
+    public int energy = 0;
 
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
@@ -51,6 +51,7 @@ public class LeonGeneratorBlockEntity extends BlockEntity implements MenuProvide
                 return switch (pIndex){
                     case 0 -> LeonGeneratorBlockEntity.this.progress;
                     case 1 -> LeonGeneratorBlockEntity.this.maxProgress;
+                    case 2 -> LeonGeneratorBlockEntity.this.energy;
                     default -> 0;
                 };
             }
@@ -60,12 +61,13 @@ public class LeonGeneratorBlockEntity extends BlockEntity implements MenuProvide
                 switch (pIndex){
                     case 0 -> LeonGeneratorBlockEntity.this.progress = pValue;
                     case 1 -> LeonGeneratorBlockEntity.this.maxProgress = pValue;
+                    case 2 -> LeonGeneratorBlockEntity.this.energy = pValue;
                 }
             }
 
             @Override
             public int getCount() {
-                return 2;
+                return 3;
             }
         };
     }
@@ -114,6 +116,8 @@ public class LeonGeneratorBlockEntity extends BlockEntity implements MenuProvide
         p_187471_.put("inventory", itemHandler.serializeNBT());
         p_187471_.putInt("leon_grinder_station_progress", progress);
 
+        p_187471_.putInt("leon_grinder_station_energy", energy);
+
         super.saveAdditional(p_187471_);
     }
 
@@ -122,6 +126,7 @@ public class LeonGeneratorBlockEntity extends BlockEntity implements MenuProvide
         super.load(p_155245_);
         itemHandler.deserializeNBT(p_155245_.getCompound("inventory"));
         progress = p_155245_.getInt("leon_grinder_station_progress");
+        energy = p_155245_.getInt("leon_grinder_station_energy");
     }
 
     private void resetProgress() {
@@ -142,7 +147,7 @@ public class LeonGeneratorBlockEntity extends BlockEntity implements MenuProvide
     }
 
     private void produceEnergy() {
-        energy += 0.5f;
+        this.energy++;
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
 
 

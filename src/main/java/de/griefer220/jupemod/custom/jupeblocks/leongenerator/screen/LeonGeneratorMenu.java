@@ -4,6 +4,7 @@ import de.griefer220.jupemod.custom.jupeblocks.leongenerator.LeonGeneratorBlockE
 import de.griefer220.jupemod.init.ModBlocks;
 import de.griefer220.jupemod.init.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
@@ -19,7 +20,7 @@ public class LeonGeneratorMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public LeonGeneratorMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(3));
     }
 
     public LeonGeneratorMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
@@ -38,6 +39,8 @@ public class LeonGeneratorMenu extends AbstractContainerMenu {
         });
 
         addDataSlots(data);
+
+        inv.player.sendSystemMessage(Component.translatable("block.jupemod.leon_generator"));
     }
 
     public boolean isCrafting() {
@@ -50,6 +53,10 @@ public class LeonGeneratorMenu extends AbstractContainerMenu {
         int progressArrowSize = 26; // This is the height in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+
+    public int getEnergy(){
+        return this.data.get(2);
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons

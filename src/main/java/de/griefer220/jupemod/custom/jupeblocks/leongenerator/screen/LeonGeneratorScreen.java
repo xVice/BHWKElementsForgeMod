@@ -2,6 +2,7 @@ package de.griefer220.jupemod.custom.jupeblocks.leongenerator.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import de.griefer220.jupemod.BHWK;
+import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -35,6 +36,8 @@ public class LeonGeneratorScreen extends AbstractContainerScreen<LeonGeneratorMe
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
+
+
     }
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
@@ -47,6 +50,9 @@ public class LeonGeneratorScreen extends AbstractContainerScreen<LeonGeneratorMe
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
         renderBackground(guiGraphics);
         super.render(guiGraphics, mouseX, mouseY, delta);
+        String energyLabel = "Energy: " + menu.getEnergy();
+        guiGraphics.drawString(this.font, energyLabel, 25, 50, 225157, false);
         renderTooltip(guiGraphics, mouseX, mouseY);
+
     }
 }
