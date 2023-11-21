@@ -51,7 +51,7 @@ public class LeonGeneratorScreen extends AbstractContainerScreen<LeonGeneratorMe
         renderBackground(guiGraphics);
         super.render(guiGraphics, mouseX, mouseY, delta);
         String energyLabel = "Energy: " + menu.getEnergy();
-        guiGraphics.drawString(this.font, energyLabel, 25, 50, 225157, false);
+        guiGraphics.drawString(this.font, energyLabel, 150, 50, 225157, false);
         renderTooltip(guiGraphics, mouseX, mouseY);
 
     }

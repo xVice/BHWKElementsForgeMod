@@ -63,6 +63,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.juber_hoe.get())
+                .pattern("JJ ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('J', ModItems.juber_ingot.get()).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.juber_pickaxe.get())
+                .pattern("JJJ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('J', ModItems.juber_ingot.get()).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.juber_shovel.get())
+                .pattern(" J ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('J', ModItems.juber_ingot.get()).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.juber_sword.get())
+                .pattern(" J ")
+                .pattern(" J ")
+                .pattern(" S ")
+                .define('J', ModItems.juber_ingot.get()).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.juber_axe.get())
+                .pattern("JJ ")
+                .pattern("JS ")
+                .pattern(" S ")
+                .define('J', ModItems.juber_ingot.get()).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.juber_ingot.get()), has(ModItems.juber_ingot.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.juber_ingot.get(), 9)
                 .requires(ModBlocks.juber_block.get())
                 .unlockedBy(getHasName(ModBlocks.juber_block.get()), has(ModBlocks.juber_block.get()))

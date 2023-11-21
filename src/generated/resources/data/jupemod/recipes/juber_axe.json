@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "jupemod:juber_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "JJ ",
+    "JS ",
+    " S "
+  ],
+  "result": {
+    "item": "jupemod:juber_axe"
+  },
+  "show_notification": true
+}
