@@ -33,6 +33,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.leon_generator.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/leon_generator"))
         );
+
+        simpleBlockWithItem(ModBlocks.big_bench.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/big_bench"))
+        );
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

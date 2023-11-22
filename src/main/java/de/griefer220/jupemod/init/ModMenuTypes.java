@@ -1,6 +1,7 @@
 package de.griefer220.jupemod.init;
 
 import de.griefer220.jupemod.BHWK;
+import de.griefer220.jupemod.custom.jupeblocks.bigbench.screen.BigBenchMenu;
 import de.griefer220.jupemod.custom.jupeblocks.grinderblock.screen.CustomGrinderMenu;
 import de.griefer220.jupemod.custom.jupeblocks.leongenerator.screen.LeonGeneratorMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -22,6 +23,9 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<LeonGeneratorMenu>> LEON_GENERATOR_MENU =
             registerMenuType("leon_generator_menu", LeonGeneratorMenu::new);
+
+    public static final RegistryObject<MenuType<BigBenchMenu>> BIG_BENCH_MENU =
+            registerMenuType("big_bench_menu", BigBenchMenu::new);
 
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {

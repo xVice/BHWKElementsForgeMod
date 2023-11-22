@@ -1,6 +1,8 @@
 package de.griefer220.jupemod;
 
 import com.mojang.logging.LogUtils;
+import de.griefer220.jupemod.custom.jupeblocks.bigbench.screen.BigBenchMenu;
+import de.griefer220.jupemod.custom.jupeblocks.bigbench.screen.BigBenchScreen;
 import de.griefer220.jupemod.custom.jupeblocks.grinderblock.screen.CustomGrinderScreen;
 import de.griefer220.jupemod.custom.jupeblocks.leongenerator.screen.LeonGeneratorScreen;
 import de.griefer220.jupemod.init.ModBlockEntitys;
@@ -59,6 +61,7 @@ public class BHWK {
         public static void onClientSetup(FMLClientSetupEvent event) {
             MenuScreens.register(ModMenuTypes.JUPE_GRINDER_MENU.get(), CustomGrinderScreen::new);
             MenuScreens.register(ModMenuTypes.LEON_GENERATOR_MENU.get(), LeonGeneratorScreen::new);
+            MenuScreens.register(ModMenuTypes.BIG_BENCH_MENU.get(), BigBenchScreen::new);
         }
     }
 }

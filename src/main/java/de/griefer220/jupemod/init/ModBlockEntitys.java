@@ -1,6 +1,7 @@
 package de.griefer220.jupemod.init;
 
 import de.griefer220.jupemod.BHWK;
+import de.griefer220.jupemod.custom.jupeblocks.bigbench.BigBenchBlockEntity;
 import de.griefer220.jupemod.custom.jupeblocks.grinderblock.CustomGrinderBlockEntity;
 import de.griefer220.jupemod.custom.jupeblocks.leongenerator.LeonGeneratorBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -22,6 +23,11 @@ public class ModBlockEntitys {
             BLOCK_ENTITES.register("leon_generator_be", () ->
                     BlockEntityType.Builder.of(LeonGeneratorBlockEntity::new,
                             ModBlocks.leon_generator.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BigBenchBlockEntity>> BIG_BENCH_BE =
+            BLOCK_ENTITES.register("big_bench_be", () ->
+                    BlockEntityType.Builder.of(BigBenchBlockEntity::new,
+                            ModBlocks.big_bench.get()).build(null));
 
     public static void register(IEventBus eventBus){
         BLOCK_ENTITES.register(eventBus);

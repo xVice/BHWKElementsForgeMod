@@ -46,7 +46,7 @@ public class CreativeTabInit {
                         pOutput.accept(ModItems.jupe_ingot.get());
                         pOutput.accept(ModBlocks.leon_generator.get());
                         pOutput.accept(ModItems.gelencser_ingot.get());
-
+                        pOutput.accept(ModBlocks.big_bench.get());
                     })
                     .build());
 

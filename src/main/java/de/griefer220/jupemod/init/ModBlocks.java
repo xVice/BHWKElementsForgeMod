@@ -1,6 +1,7 @@
 package de.griefer220.jupemod.init;
 
 import de.griefer220.jupemod.BHWK;
+import de.griefer220.jupemod.custom.jupeblocks.bigbench.BigBenchBaseBlock;
 import de.griefer220.jupemod.custom.jupeblocks.grinderblock.CustomGrinderBaseBlock;
 import de.griefer220.jupemod.custom.jupeblocks.leongenerator.LeonGeneratorBaseBlock;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -48,6 +49,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> jupe_grinder = registerBlock("jupe_grinder",
             () -> new CustomGrinderBaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
+
+    public static final RegistryObject<Block> big_bench = registerBlock("big_bench",
+            () -> new BigBenchBaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     //leon
     public static final RegistryObject<Block> leon_generator = registerBlock("leon_generator",

@@ -1,4 +1,5 @@
-// 1.20.1	2023-11-21T01:28:38.9196371	Loot Tables
+// 1.20.1	2023-11-21T23:56:50.9220831	Loot Tables
+adebb9a42cb59046caff02bc2245e086353c9fd7 data/jupemod/loot_tables/blocks/big_bench.json
 24fa45bde8243eea697ea2d4faea949cc90b2aee data/jupemod/loot_tables/blocks/bool_block.json
 5727007945462d796983a6fb6a2e70f004b5d36b data/jupemod/loot_tables/blocks/bool_ore.json
 55f0d1d65a3ee90539f294a2b9e07034bd16bb54 data/jupemod/loot_tables/blocks/juber_block.json
